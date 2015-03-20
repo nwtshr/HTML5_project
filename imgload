@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+    <title>test</title>
+    <style type="text/css"></style>
+    <script language="JavaScript">
+
+    function init1(){
+       a = new Date();
+       a = "?" + a.getTime();
+       newImage1 = document.imgload1.src;
+       index1 = newImage1.indexOf("?", 0);
+       if (index1 > 0)
+       {
+           newImage1 = newImage1.substr(0, index1);
+       }
+       document.imgload1.src = "image.jpg"+a;
+    }
+    
+    
+    function init2(){
+        b = new Date();
+        b = "?" + b.getTime();
+        newImage2 = document.imgload2.src;
+        index2 = newImage2.indexOf("?", 0);
+        if (index2 > 0)
+        {
+            newImage2 = newImage2.substr(0, index2);
+        }
+        document.imgload2.src = "image.jpg"+b;
+    }
+    
+    
+    function init3(){
+        c = new Date();
+        c = "?" + c.getTime();
+        newImage3 = document.imgload3.src;
+        index3 = newImage3.indexOf("?", 0);
+        if (index3 > 0)
+        {
+            newImage3 = newImage3.substr(0, index3);
+        }
+        document.imgload3.src = "image.jpg"+c;
+    }
+    
+    
+    function init4(){
+        d = new Date();
+        d = "?" + d.getTime();
+        newImage4 = document.imgload4.src;
+        index4 = newImage4.indexOf("?", 0);
+        if (index4 > 0)
+        {
+            newImage4 = newImage4.substr(0, index4);
+        }
+        document.imgload4.src = "image.jpg"+d;
+    }
+    
+    
+    function init5(){
+        e = new Date();
+        e = "?" + e.getTime();
+        newImage5 = document.imgload5.src;
+        index5 = newImage5.indexOf("?", 0);
+        if (index5 > 0)
+        {
+            newImage5 = newImage5.substr(0, index5);
+        }
+        document.imgload5.src = "image.jpg"+e;
+    }
+    
+    
+    function init6(){
+        f = new Date();
+        f = "?" + f.getTime();
+        newImage6 = document.imgload6.src;
+        index6 = newImage6.indexOf("?", 0);
+        if (index6 > 0)
+        {
+            newImage6 = newImage6.substr(0, index6);
+        }
+        document.imgload6.src = "image.jpg"+f;
+    }
+    
+        </script>
+</head>
+<body>
+    <img src="image.jpg" name=imgload1
+        onload='setTimeout("init1()",500)' onerror='setTimeout("init1()", 50)' id=imgload1>
+    <img src="image.jpg" name=imgload2
+        onload='setTimeout("init2()",500)' onerror='setTimeout("init2()", 50)' id=imgload2>
+    <img src="image.jpg" name=imgload3
+        onload='setTimeout("init3()",500)' onerror='setTimeout("init3()", 50)' id=imgload3>
+    <img src="image.jpg" name=imgload4
+        onload='setTimeout("init4()",500)' onerror='setTimeout("init4()", 50)' id=imgload4>
+    <img src="image.jpg" name=imgload5
+        onload='setTimeout("init5()",500)' onerror='setTimeout("init5()", 50)' id=imgload5>
+    <img src="image.jpg" name=imgload6
+        onload='setTimeout("init6()",500)' onerror='setTimeout("init6()", 50)' id=imgload6>
+</body>
+</html>
